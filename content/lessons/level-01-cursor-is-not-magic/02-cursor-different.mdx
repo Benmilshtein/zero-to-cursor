@@ -1,0 +1,32 @@
+---
+title: What makes Cursor different
+estMinutes: 4
+activityTypes: ["Quiz", "DragMatch"]
+status: published
+description: The "AI-first" claim, decoded.
+---
+
+Cursor calls itself "the AI-first code editor." That's a marketing line. What does it actually mean in practice?
+
+Most editors *let you bolt AI onto them* with a plugin — GitHub Copilot in VS Code, for example. The AI lives in a corner. It autocompletes. Useful, but separate.
+
+Cursor flips the relationship. AI is built into the **core interactions** of the editor:
+
+1. **Tab** — predictive autocomplete that often suggests entire blocks, not just the next word.
+2. **Cmd+K (Ctrl+K on Windows/Linux)** — highlight code, press a key, describe a change in plain English, watch it apply.
+3. **Cmd+L** — a chat panel that knows about your codebase.
+4. **Composer / Agent** — describe a feature; Cursor edits multiple files, runs commands, and reports back.
+
+The point isn't "AI in the editor." The point is that **every action you take has an AI version available**. You can still type code by hand. But the moment you want help, it's one keystroke away — and it's already looking at your project.
+
+That's the difference. Not magic. Just deeper integration.
+
+<DragMatch
+  id="match1"
+  pairs={[
+    { left: "Tab", right: "Predictive autocomplete" },
+    { left: "Cmd+K", right: "Inline edit on a selection" },
+    { left: "Cmd+L", right: "Chat about your code" },
+    { left: "Agent", right: "Autonomous multi-file changes" }
+  ]}
+/>

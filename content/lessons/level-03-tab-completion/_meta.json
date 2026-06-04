@@ -1,0 +1,7 @@
+{
+  "slug": "level-03-tab-completion",
+  "ordinal": 3,
+  "title": "Tab Completion",
+  "description": "Cursor Tab — accept, partial, multi-line, when to reject.",
+  "status": "planned"
+}

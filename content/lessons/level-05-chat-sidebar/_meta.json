@@ -1,0 +1,7 @@
+{
+  "slug": "level-05-chat-sidebar",
+  "ordinal": 5,
+  "title": "The AI Chat Sidebar",
+  "description": "Cmd+L, @-mentions, asking questions about code.",
+  "status": "planned"
+}

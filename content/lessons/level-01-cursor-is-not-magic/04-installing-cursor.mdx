@@ -1,0 +1,56 @@
+---
+title: Installing Cursor
+estMinutes: 4
+activityTypes: ["Quiz", "FillInBlank"]
+status: published
+description: macOS, Windows, Linux — the short version.
+---
+
+Installation is a one-page job on all three platforms. Open [cursor.com](https://cursor.com) and click **Download**. The site detects your OS and serves the right installer.
+
+### macOS
+
+Download the `.dmg`, open it, drag **Cursor** into **Applications**, eject the disk image. First launch: macOS will ask you to confirm you want to open an app downloaded from the internet. Click Open.
+
+### Windows
+
+Download the `.exe` installer, run it, click through. Cursor installs per-user by default (no admin password needed).
+
+### Linux
+
+Download the `AppImage`. Make it executable:
+
+```bash
+chmod +x Cursor-*.AppImage
+./Cursor-*.AppImage
+```
+
+Or use the `.deb` if you're on Debian/Ubuntu:
+
+```bash
+sudo dpkg -i cursor_*.deb
+```
+
+### After install
+
+When you open Cursor for the first time, you'll see a welcome screen. We'll cover that next. But before we do — **don't worry about importing settings yet**. If you're coming from VS Code, Cursor will offer to import. Skip it for now; we want a clean slate while you learn.
+
+<FillInBlank
+  id="b1"
+  prompt="The official site to download Cursor is ___"
+  answer="cursor.com"
+  hint="Just the domain, no protocol."
+/>
+
+<Quiz
+  id="q1"
+  question="On macOS, after dragging Cursor into Applications, what does macOS ask the first time you open it?"
+  options={[
+    "Your Apple ID password",
+    "To confirm you want to open an app downloaded from the internet",
+    "To grant full disk access",
+    "Nothing — it just opens"
+  ]}
+  correct={1}
+  explanation="macOS's Gatekeeper asks you to confirm any new app from the internet, exactly once."
+/>

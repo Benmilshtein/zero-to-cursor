@@ -1,0 +1,50 @@
+---
+title: The four AI primitives you'll learn
+estMinutes: 4
+activityTypes: ["DragMatch", "Quiz"]
+status: published
+description: A 30-second preview of Levels 3 through 8.
+---
+
+The rest of this course teaches Cursor's AI in four layers, in this order. Knowing them in advance helps the lessons stick.
+
+### 1. Tab — predictive completion (Level 3)
+
+Cursor watches what you're typing and proposes a completion in gray text. Press **Tab** to accept. It might suggest the rest of the line, the next several lines, or even a small block. It's the fastest AI in the editor — most pros use it constantly without thinking.
+
+### 2. Cmd+K — inline edit (Level 4)
+
+Select some code (or just put your cursor in a spot). Press **Cmd+K**. A prompt box appears. Type what you want — *"add error handling"*, *"rewrite this in TypeScript"*, *"add a docstring"*. Cursor edits the code in place, showing a diff to accept or reject.
+
+### 3. Chat — Cmd+L (Levels 5 & 6)
+
+Press **Cmd+L** to open the chat panel on the right. Ask questions. Reference files with `@filename`. Reference the whole codebase with `@Codebase`. Pull in docs, the web, your Git history. The chat doesn't edit code by itself — it answers and suggests.
+
+### 4. Composer / Agent — Cmd+I (Levels 7 & 8)
+
+Press **Cmd+I** to open Composer. Describe a feature. Composer edits multiple files at once. Toggle **Agent mode** and it goes further — runs commands in your terminal, reads outputs, iterates, asks for approval at key steps.
+
+These four layers escalate by autonomy: Tab is reactive, Cmd+K is local and instant, Chat is conversational, Agent is autonomous. By Level 8 you'll have a working intuition for which one to reach for in any given moment.
+
+<DragMatch
+  id="match1"
+  pairs={[
+    { left: "Tab", right: "Inline completion as you type" },
+    { left: "Cmd+K", right: "Edit selected code with a one-shot prompt" },
+    { left: "Cmd+L", right: "Open the chat panel for questions" },
+    { left: "Cmd+I", right: "Open Composer for multi-file changes" }
+  ]}
+/>
+
+<Quiz
+  id="q1"
+  question="Which primitive runs commands in your terminal and iterates autonomously?"
+  options={[
+    "Tab",
+    "Cmd+K (Inline Edit)",
+    "Chat",
+    "Agent mode (in Composer)"
+  ]}
+  correct={3}
+  explanation="Agent is the most autonomous of the four — it can run commands, read outputs, and iterate. The others wait for you."
+/>

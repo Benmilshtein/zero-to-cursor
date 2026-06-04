@@ -1,0 +1,55 @@
+---
+title: The Cursor interface — a guided tour
+estMinutes: 5
+activityTypes: ["DragMatch", "Quiz"]
+status: published
+description: Five regions of the window, and what each one does.
+---
+
+The Cursor window has five main regions. If you know VS Code, four of them will be familiar; the fifth is the AI chat panel.
+
+### 1. Activity Bar (far left)
+
+The strip of icons running down the left edge. Each icon switches the sidebar to a different view: file explorer, search, source control (Git), extensions, run/debug. The very bottom of the activity bar holds account, settings, and the Cursor settings cog.
+
+### 2. Sidebar
+
+What the active activity-bar icon is showing. Most of the time, that's the file explorer — your project's folder tree. Click a file to open it in the editor.
+
+### 3. Editor Group
+
+The main center area. Where the files you've opened are shown. You can split it horizontally or vertically, group tabs, etc. This is where you actually write code.
+
+### 4. Panel (bottom)
+
+A drawer at the bottom of the window. It holds the integrated **terminal**, the **output** panel, the **problems** view (errors/warnings), and **debug console**. Toggle it with Ctrl+\` (backtick).
+
+### 5. AI Pane (right) — *this is what's added in Cursor*
+
+A panel on the right side, opened with Cmd+L. It hosts the AI chat — questions about your code, multi-file edits, Composer, Agent mode. It's the home base for everything AI in Cursor.
+
+You can show or hide the sidebar (Cmd+B), the panel (Cmd+J), and the AI pane (Cmd+L) independently.
+
+<DragMatch
+  id="match1"
+  pairs={[
+    { left: "Activity Bar", right: "Strip of icons switching the sidebar view" },
+    { left: "Sidebar", right: "File explorer, search, or whatever the activity bar selected" },
+    { left: "Editor Group", right: "The center area where you write code" },
+    { left: "Panel", right: "The bottom drawer with terminal and output" },
+    { left: "AI Pane", right: "The right-side panel for chat and AI features" }
+  ]}
+/>
+
+<Quiz
+  id="q1"
+  question="Which region is the one that Cursor adds on top of VS Code's standard layout?"
+  options={[
+    "The Activity Bar",
+    "The Panel (terminal)",
+    "The AI Pane (right side)",
+    "The Editor Group"
+  ]}
+  correct={2}
+  explanation="The right-hand AI pane is the visible signature of Cursor — that's where chat, Composer, and Agent live."
+/>

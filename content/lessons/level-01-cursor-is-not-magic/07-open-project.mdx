@@ -1,0 +1,51 @@
+---
+title: Opening your first project
+estMinutes: 4
+activityTypes: ["CursorSim", "Quiz"]
+status: published
+description: A "project" in Cursor is just a folder. Here's how it actually works.
+---
+
+In Cursor, a **project** is just a folder on your computer. There's no project file, no `.cursor-project` config, no separate "create new project" step. You open a folder; that folder is your project.
+
+### Three ways to open a folder
+
+1. **File → Open Folder** (Cmd+O on macOS, Ctrl+O on Windows/Linux).
+2. **Drag** a folder onto the Cursor app icon, or onto an open window.
+3. **From a terminal**: `cursor .` opens the current folder in Cursor. (We'll install this command in a later lesson.)
+
+### Try it now
+
+Make a fresh folder on your desktop called `hello-cursor`. Open Cursor. Use **File → Open Folder** and pick that folder.
+
+What you'll see:
+
+- The folder name appears at the top of the sidebar.
+- The sidebar is empty (no files yet).
+- A welcome tab or "no file selected" view fills the editor area.
+
+That's a Cursor project. The folder *is* the project. When Cursor indexes your codebase later (for `@Codebase` and other features), it indexes everything in that folder, respecting any `.gitignore` or `.cursorignore` files you have.
+
+<CursorSim
+  id="open1"
+  scenario="Open a new folder in Cursor."
+  steps={[
+    { kind: "keypress", keys: "Cmd+O", label: "Open the folder picker" },
+    { kind: "click", target: "hello-cursor", label: "Pick the folder" },
+    { kind: "click", target: "Open", label: "Confirm" }
+  ]}
+  starter="(empty folder — Cursor is waiting for files)"
+/>
+
+<Quiz
+  id="q1"
+  question="What is a 'project' in Cursor?"
+  options={[
+    "A file with the .cursor extension",
+    "An entry in your Cursor account's project list",
+    "A folder on your computer that you've opened in Cursor",
+    "A Git repository connected to Cursor"
+  ]}
+  correct={2}
+  explanation="A project is just a folder. No special file, no signup, no setup. Open a folder — you have a project."
+/>

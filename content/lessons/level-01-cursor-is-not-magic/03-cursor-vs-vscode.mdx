@@ -1,0 +1,43 @@
+---
+title: Cursor vs VS Code
+estMinutes: 3
+activityTypes: ["Quiz"]
+status: published
+description: Cursor is a fork of VS Code. Here's what that means for you.
+---
+
+Here's a surprise that catches a lot of people: **Cursor is built on VS Code**. It's a fork — meaning the Cursor team took the open-source VS Code codebase, added their AI features on top, and ship their own editor from there.
+
+Why this matters:
+
+- **Your VS Code extensions work.** Most of them, anyway. Same extension marketplace, same `.vsix` format.
+- **Your keybindings transfer.** If you've memorized Cmd+P, Cmd+Shift+P, Cmd+B — they all still work.
+- **Your themes transfer.** Same theme files.
+- **Settings JSON looks identical.** The UI for editing settings is the same.
+
+What's added in Cursor:
+
+- The AI primitives we just covered (Tab, Cmd+K, Cmd+L, Composer, Agent).
+- A `.cursorrules` file (or `.cursor/rules/*.mdc` files) that tells Cursor how to think about your project.
+- Built-in support for MCP — a protocol for plugging tools into the AI.
+- Background agents and PR review (on paid plans).
+
+What's missing or different:
+
+- Microsoft's *first-party* extensions (like the official Python or C# debuggers) sometimes don't work in non-Microsoft forks. There are usually open-source alternatives.
+- A few Microsoft-branded telemetry and account features are stripped out.
+
+**If you already know VS Code, you already know 90% of Cursor.** This course will focus on the other 10% — the parts that make Cursor what it is.
+
+<Quiz
+  id="q1"
+  question="Cursor is..."
+  options={[
+    "A brand-new editor written from scratch",
+    "A VS Code extension",
+    "A fork of VS Code with AI features built in",
+    "A web app — runs in your browser only"
+  ]}
+  correct={2}
+  explanation="Cursor is a desktop app built on the VS Code codebase. Most VS Code muscle memory carries over."
+/>

@@ -1,0 +1,7 @@
+{
+  "slug": "level-07-composer",
+  "ordinal": 7,
+  "title": "Composer & Multi-file Edits",
+  "description": "Cmd+I, normal vs agent, apply / diff / revert.",
+  "status": "planned"
+}
